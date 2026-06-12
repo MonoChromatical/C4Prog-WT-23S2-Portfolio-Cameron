@@ -26,6 +26,18 @@ The site must:
 - Use a mobile-first CSS design
 - Use semantic HTML elements in Tailwind components instead of relying on generic `div` elements
 
+## Colour Scheme
+
+The site uses a black and gold colour scheme. The darker colours are used for the page background, panels, and borders, while gold is used as the main accent colour for headings, buttons, links, and important interface details.
+
+| Name for Colour | RGB (rrr, ggg, bbb) | HEX (#rrggbb) | Sample |
+| --- | --- | --- | --- |
+| Gold | 212, 175, 55 | `#d4af37` | ![#d4af37](https://placehold.co/24x24/d4af37/d4af37.png) |
+| Dark grey | 30, 30, 30 | `#1e1e1e` | ![#1e1e1e](https://placehold.co/24x24/1e1e1e/1e1e1e.png) |
+| Black | 18, 18, 18 | `#121212` | ![#121212](https://placehold.co/24x24/121212/121212.png) |
+| White | 255, 255, 255 | `#ffffff` | ![#ffffff](https://placehold.co/24x24/ffffff/ffffff.png) |
+| Border grey | 51, 51, 51 | `#333333` | ![#333333](https://placehold.co/24x24/333333/333333.png) |
+
 ## Planned Website Pages
 
 - `index.html` - home page
