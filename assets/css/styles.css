@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* HEADER */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: #d4af37;
+}
+
+    .site-header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #d4af37;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* NAV (hidden on mobile) */
+.site-navigation {
+    display: none;
+}
+
+/* MAIN */
+.site-main {
+    padding: 1rem;
+    min-height: 60vh;
+}
+
+article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #333333;
+    background-color: #1e1e1e;
+}
+
+    article h2 {
+        color: #d4af37;
+    }
+
+/* PHASE 2 FORM */
+#ninja-api-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border: 1px solid #4d4d4d;
+    background-color: #181818;
+}
+
+#ninja-api-form h3 {
+    margin: 0;
+    color: #d4af37;
+    text-align: center;
+}
+
+#ninja-api-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #777777;
+}
+
+#ninja-api-form legend {
+    padding: 0 0.35rem;
+    color: #ffffff;
+}
+
+#ninja-api-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#api-input,
+#ninja-api-form button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font: inherit;
+}
+
+#api-input {
+    border: 1px solid #777777;
+    background-color: #ffffff;
+    color: #121212;
+}
+
+#ninja-api-form button {
+    border: 0;
+    background-color: #d4af37;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ninja-api-form button:hover,
+#ninja-api-form button:focus {
+    background-color: #f1d36f;
+}
+
+#api-response {
+    display: block;
+    min-height: 4rem;
+    padding: 0.85rem;
+    border: 1px solid #4d4d4d;
+    background-color: #0d0d0d;
+}
+
+/* ASIDE hidden on mobile */
+.site-aside {
+    display: none;
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: #d4af37;
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+@media (min-width:768px){
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-navigation {
+        display:block;
+    }
+
+    .site-navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .site-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        width: 960px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .site-aside {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .site-aside section {
+        padding: 1rem;
+        border: 1px solid #333333;
+        background-color: #1e1e1e;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .articles > h2 {
+        margin-top: 0;
+        grid-column: 1 / -1;
+    }
+
+    .articles article:nth-of-type(3) {
+        grid-column: 1 / -1;
+    }
+
+    #ninja-api-form {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1.5rem;
+    }
+
+    #ninja-api-form fieldset {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #ninja-api-form button {
+        width: auto;
+        align-self: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .site-aside h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .site-aside footer {
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid #333333;
+    }
+
+    .site-aside ul {
+        margin: 0;
+        padding-left: 1.25rem;
+    }
+
+    .site-aside p {
+        margin-top: 0;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+        border: 1px solid #333333;
+        background-color: #000;
+    }
+
+}
+
+
+
+ 
