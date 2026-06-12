@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cameron Portfolio</title>
+    <link rel="stylesheet" href="assets/css/tailwind-output.css">
+    <script src="assets/js/contact.js" defer></script>
+</head>
+<body class="bg-[#121212] text-white">
+    <header class="bg-[#1e1e1e] p-4 text-[#d4af37]">
+        <h1 class="text-2xl font-bold">Contact</h1>
+        <nav class="mt-3" aria-label="Main navigation">
+            <ul class="flex flex-col gap-2 sm:flex-row sm:gap-4">
+                <li><a class="hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="about.html">About</a></li>
+                <li><a class="hover:underline" href="resume.html">Resume</a></li>
+                <li><a class="hover:underline" href="projects.html">Projects</a></li>
+                <li><a class="hover:underline" href="mywork.html">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-4">
+        <section class="border border-[#333333] bg-[#1e1e1e] p-4">
+            <h2 class="text-xl font-bold text-[#d4af37]">Contact Me</h2>
+            <p class="mt-2">Send me a message using the form below. All fields are checked using JavaScript before the form can be submitted.</p>
+
+            <form class="mt-4 flex flex-col gap-3" id="contact-form" action="#" method="post" novalidate>
+                <label for="name">Name</label>
+                <input class="p-2 text-[#121212]" id="name" name="name" type="text">
+                <p class="text-sm text-red-400" id="name-error"></p>
+
+                <label for="email">Email</label>
+                <input class="p-2 text-[#121212]" id="email" name="email" type="email">
+                <p class="text-sm text-red-400" id="email-error"></p>
+
+                <label for="message">Message</label>
+                <textarea class="p-2 text-[#121212]" id="message" name="message" rows="5"></textarea>
+                <p class="text-sm text-red-400" id="message-error"></p>
+
+                <button class="bg-[#d4af37] p-2 font-bold text-[#121212]" type="submit">Send Message</button>
+                <output class="text-[#d4af37]" id="contact-response"></output>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-[#1e1e1e] p-4 text-[#d4af37]">
+        <p>&copy; 2026 Cameron - Web Technologies Portfolio</p>
+    </footer>
+</body>
+</html>
